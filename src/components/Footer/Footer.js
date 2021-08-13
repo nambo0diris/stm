@@ -100,6 +100,7 @@ class Footer extends Component {
                     </div>
                     <div className="footer-copyright"></div>
                 </div>
+                <script src="../../assets/js/owl.carousel.js"/>
             </div>
         );
     }

@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import '../../assets/css/owl.carousel.css';
+import '../../assets/css/owl.theme.default.css';
 import Item from "../ItemCard/Item";
 import TabsBtns from "./TabsBtns/TabsBtns";
-
 
 class Slider extends Component {
     render() {
