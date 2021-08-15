@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './instagram.css'
+import insta from '../../assets/img/icon/Vectoricon1.svg';
 import insta1 from '../../assets/img/instagram/instagram.jpg';
 import insta2 from '../../assets/img/instagram/instagram2.jpg';
 import insta3 from '../../assets/img/instagram/instagram3.jpg';
@@ -12,7 +13,7 @@ class Instagram extends Component {
                 <div className="container">
                     <div className="title">
                         <h2>Наш инстаграм</h2>
-                        <a href=""><img src={insta1} alt="insta"/>@parisnail_stamping</a>
+                        <a href=""><img src={insta} alt="insta"/>@parisnail_stamping</a>
                     </div>
                     <div className="instagram_wrapper">
                         <a href="" className="ins_item"><img src={insta1} alt="insta"/></a>

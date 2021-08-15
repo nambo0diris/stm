@@ -14,24 +14,23 @@ class Categories extends Component {
                         <h2>Наши категории</h2>
                     </div>
                     <div className="categories_wrapper">
-                        <div className="categorie_item" style={{ backgroundImage: `url(${img1})`}}>
+                        <div className="categorie_item">
+                            <img src={img1} alt=""/>
+                            <a className="categorie_btn" href="">Оборудование</a>
+                        </div><div className="categorie_item">
+                            <img src={img2} alt=""/>
+                            <a className="categorie_btn" href="">Оборудование</a>
+                        </div><div className="categorie_item">
+                            <img src={img3} alt=""/>
+                            <a className="categorie_btn" href="">Оборудование</a>
+                        </div><div className="categorie_item">
+                            <img src={img4} alt=""/>
+                            <a className="categorie_btn" href="">Оборудование</a>
+                        </div><div className="categorie_item">
+                            <img src={img5} alt=""/>
                             <a className="categorie_btn" href="">Оборудование</a>
                         </div>
-                        <div className="categorie_item" style={{ backgroundImage: `url(${img2})`}}>
-                            <a className="categorie_btn" href="">Пластины</a>
-                        </div>
-                        <div className="categorie_item" style={{ backgroundImage: `url(${img3})`}}>
-                            <a className="categorie_btn" href="">Товары для стемпинга</a>
-                        </div>
-                        <div className="categorie_item" style={{ backgroundImage: `url(${img4})`}}>
-                            <a className="categorie_btn" href="">Расходники</a>
-                        </div>
-                        <div className="categorie_item" style={{ backgroundImage: `url(${img5})`}}>
-                            <a className="categorie_btn" href="">Жидкости</a>
-                        </div>
-                        {/*<div className="categorie_item" style={{ backgroundImage: `url(${img5})`}}>*/}
-                        {/*    <a className="categorie_btn" href="">Дизайны</a>*/}
-                        {/*</div>*/}
+
                     </div>
                 </div>
             </div>

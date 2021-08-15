@@ -5,6 +5,8 @@ import search from '../../assets/img/search.svg';
 import favorites from '../../assets/img/icon/heart-black.svg';
 import cart from '../../assets/img/icon/cart.svg';
 import auth from '../../assets/img/icon/man.svg';
+import ShopMenu from "./shop-menu/ShopMenu";
+import SchoolMenu from "./school-menu/SchoolMenu";
 class Header extends Component {
     render() {
         return (
@@ -12,9 +14,9 @@ class Header extends Component {
                 <div className="h-top">
                     <div className="container">
                         <div className="header-directions">
-                            <button className="header-tab-btn">Магазин</button>
-                            <button className="header-tab-btn active">Школа</button>
-                            <button className="header-tab-btn">Опт</button>
+                            <button className="header-tab-btn shop">Магазин</button>
+                            <button className="header-tab-btn school active">Школа</button>
+                            <button className="header-tab-btn wholesale">Опт</button>
                         </div>
                     </div>
                 </div>
@@ -37,15 +39,8 @@ class Header extends Component {
                 </div>
                 <div className="header-nav">
                     <div className="container">
-                        <ul className="horizontal-menu">
-                            <li><a href="" className="horizontal-menu-link active">Доставка</a></li>
-                            <li><a href="" className="horizontal-menu-link">Магазины</a></li>
-                            <li><a href="" className="horizontal-menu-link">Акции</a></li>
-                            <li><a href="" className="horizontal-menu-link">Распродажа</a></li>
-                            <li><a href="" className="horizontal-menu-link">О комании</a></li>
-                            <li><a href="" className="horizontal-menu-link">Контакты</a></li>
-                            <li><a href="" className="horizontal-menu-link">Товары ParisNail</a></li>
-                        </ul>
+                        <ShopMenu />
+                        <SchoolMenu />
                         <div className="dropdown">
                             <button className="dropbtn">Еще</button>
                             <div className="dropdown-content">

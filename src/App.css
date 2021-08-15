@@ -16,6 +16,15 @@ ul {
 a{
   text-decoration: none;
 }
+.admin-menu{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.admin-link{
+
+}
 .inner {
   width: 100%;
 }

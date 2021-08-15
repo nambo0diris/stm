@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import OwlCarousel from "react-owl-carousel";
+import '../../assets/css/owl.carousel.css';
+import '../../assets/css/owl.theme.default.css';
 import BannerItem from "./BannerItem";
 class Banner extends Component {
     render() {

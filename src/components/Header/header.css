@@ -10,6 +10,7 @@ header {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: auto;
 
 }
 .header-tab-btn {
@@ -83,12 +84,17 @@ header {
     top: 50%;
     transform: translateY(-50%);
 }
+.horizontal-menu li:last-child:after {
+    content: none;
+}
 .header-nav>.container>.horizontal-menu>li:last-of-type>.horizontal-menu-link{
     color: #FFA39F;
 }
 .horizontal-menu-link {
-    text-decoration: none;
     color: #4A4A4A;
+}
+.horizontal-menu-link:hover,.header-nav>.container>.horizontal-menu>li:last-of-type>.horizontal-menu-link:hover {
+    color: #FF527D;
 }
 .horizontal-menu-link.active {
     color: black;

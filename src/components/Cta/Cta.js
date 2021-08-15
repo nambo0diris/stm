@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import './cta.css';
+import background from '../../assets/img/backgr.jpg'
 class Cta extends Component {
     render() {
         return (
 
-                <div className="cta">
+                <div className="cta" style={{backgroundImage:`url(${background})`}}>
                     <div className="container">
 
                     <h2>Продукцию ParisNail уже можно приобрести у наших партнеров</h2>

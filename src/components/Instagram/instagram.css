@@ -17,7 +17,10 @@
     font-family: 'FuturaNewDemi-Reg', sans-serif;
 
 }
-
+.instagram .title>a {
+    display: flex;
+    align-items: center;
+}
 .instagram_wrapper {
     display: flex;
     flex-direction: row;

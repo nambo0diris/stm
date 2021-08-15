@@ -9,7 +9,9 @@
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+}
+
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;
@@ -18,7 +20,9 @@
     background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
-    border-radius: 3px; }
+    border-radius: 3px;
+
+  }
     .owl-theme .owl-nav [class*='owl-']:hover {
       background: #869791;
       color: #FFF;
@@ -36,7 +40,8 @@
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    *display: inline;
+  }
     .owl-theme .owl-dots .owl-dot span {
       width: 10px;
       height: 10px;
@@ -45,6 +50,49 @@
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
-      border-radius: 30px; }
+      border-radius: 30px;
+    }
+
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #869791; }
+      background: #869791;
+    }
+
+    .owl-nav{
+      display: flex;
+      position: absolute;
+      top: -45px;
+      right: 0;
+      gap: 17px;
+
+    }
+
+  .owl-prev, .owl-next {
+    font-size: 25px!important;
+    line-height: 25px!important;
+    border-radius: 50px!important;
+    background: #F5F5F5!important;
+    /*display: flex!important;*/
+    /*align-items: center!important;*/
+    /*justify-content: center!important;*/
+    /*flex-direction: row;*/
+    width: 36px;
+    height: 36px;
+    position: relative;
+
+  }
+  .owl-prev>span{
+    position: absolute;
+    top: 46%;
+    right: 52%;
+    transform: translate(50%,-50%);
+  }
+.owl-next>span {
+  position: absolute;
+  top: 46%;
+  right: 48%;
+  transform: translate(50%,-50%);
+}
+.owl-prev:hover, .owl-next:hover {
+  background: #a8a6a6!important;
+
+}

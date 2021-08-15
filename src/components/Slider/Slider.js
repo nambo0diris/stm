@@ -7,26 +7,24 @@ import TabsBtns from "./TabsBtns/TabsBtns";
 
 class Slider extends Component {
     render() {
+        const responsive = {
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+
+        }
         return (
 
                 <div className="tab_sliders">
                     <div className="container">
                     <div className="tab_slider_top">
-                        <TabsBtns />
-                        <OwlCarousel className="owl-carousel owl-theme" items={5} dots={0} margin={20}>
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                            <Item />
-                        </OwlCarousel>
-                        <OwlCarousel className="owl-carousel owl-theme" items={5} margin={20}>
+                        <OwlCarousel className="owl-carousel owl-theme" items={5} dots={0} margin={20} responsive={responsive} nav={true}>
                             <Item />
                             <Item />
                             <Item />
