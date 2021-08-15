@@ -16,10 +16,14 @@
 .footer-col{
     flex: 1;
     padding: 0 15px;
-    min-width: 202px;
     display: flex;
     flex-direction: column;
 }
+
+.download-app {
+    white-space: nowrap;
+}
+
 .download-app>a:first-of-type {
     margin-right: 3px;
 }
@@ -49,7 +53,6 @@
 .footer-content_right {
     font-family: FuturaNewDemi-Reg,sans-serif;
 
-    flex: 1;
 }
 .footer-social > a {
     margin-right: 20px;
@@ -83,4 +86,28 @@
 .feedback-btn:hover {
     background: #FF527D;
     color: #FFFFFF;
+}
+.xs-show{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .download-app {
+        white-space: normal;
+    }
+}
+@media screen and (max-width: 440px){
+    .footer-content, .footer-content_left, .footer-content_right {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 440px){
+    .xs-hidden {
+        display: none;
+    }
+    .xs-show{
+        display: flex;
+    }
+    .footer-subscribe>.xs-show:first-of-type{
+        margin-bottom: 10px;
+    }
 }

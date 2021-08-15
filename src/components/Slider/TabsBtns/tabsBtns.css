@@ -56,8 +56,9 @@
         justify-content: center;
     }
     .left-btns {
-
-        gap: 32px;
+        width: 100%;
+        gap: 0px;
+        justify-content: space-around;
     }
     .tab-btn {
         font-size: 16px;

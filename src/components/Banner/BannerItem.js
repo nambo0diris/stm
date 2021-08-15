@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import banner12 from '../../assets/img/banner2.jpg';
+import banner12 from '../../assets/img/banner1.jpg';
 class BannerItem extends Component {
     render() {
         return (

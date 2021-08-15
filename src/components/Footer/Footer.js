@@ -20,6 +20,14 @@ class Footer extends Component {
                 <div className="container">
                     <div className="footer-content">
                         <div className="footer-content_left">
+                            <div className="footer-col xs-show">
+                                <div className="footer-social">
+                                    <p>ParisNail в соцсетях</p>
+                                    <a href=""><img src={vk} alt=""/></a>
+                                    <a href=""><img src={insta} alt=""/></a>
+                                    <a href=""><img src={youtube} alt=""/></a>
+                                </div>
+                            </div>
                             <div className="footer-col">
                                 <ul>
                                     <li>Бонусная программа</li>
@@ -47,7 +55,7 @@ class Footer extends Component {
                                     <li>Биржа труда</li>
                                 </ul>
                             </div>
-                            <div className="footer-col">
+                            <div className="footer-col  xs-hidden">
                                 <ul>
                                     <li>Мобильное приложение</li>
                                     <li className="download-app">
@@ -59,7 +67,7 @@ class Footer extends Component {
                         </div>
                         <div className="footer-content_right">
                             <div className="footer-col">
-                                <div className="footer-social">
+                                <div className="footer-social xs-hidden">
                                     <p>ParisNail в соцсетях</p>
                                     <a href=""><img src={vk} alt=""/></a>
                                     <a href=""><img src={insta} alt=""/></a>
@@ -89,6 +97,11 @@ class Footer extends Component {
                                 </div>
                                 <div className="other-btns">
                                     <ul className="footer-subscribe">
+                                        <li className="xs-show">Мобильное приложение</li>
+                                        <li className="download-app xs-show">
+                                            <a href=""><img src={gpay} alt=""/></a>
+                                            <a href=""><img src={apppay} alt=""/></a>
+                                        </li>
                                         <li><a href=""><img src={subs} alt=""/>Подписка на новости</a></li>
                                         <li><a href=""><img src={eye} alt=""/>Версия для слабовидящих</a></li>
                                         <li><a href=""><img src={sitemap} alt=""/>Карта сайта</a></li>
@@ -98,8 +111,9 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="footer-copyright"></div>
+                    <div className="footer-copyright"/>
                 </div>
+                <script src="../../assets/js/jquery-3.6.0.js"/>
                 <script src="../../assets/js/owl.carousel.js"/>
             </div>
         );
