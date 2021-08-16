@@ -40,7 +40,7 @@ class Header extends Component {
                 <div className="header-nav">
                     <div className="container">
                         <ShopMenu />
-                        <SchoolMenu />
+                        {/*<SchoolMenu />*/}
                         <div className="dropdown">
                             <button className="dropbtn">Еще</button>
                             <div className="dropdown-content">
